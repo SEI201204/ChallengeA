@@ -1,18 +1,18 @@
 import random
- 
+
 def number():
-   
+    
     secretnumber = random.randint(1, 100)
-   
+    
     print("********************************************")
     print("ทายตัวเลขที่มีค่าอยู่ที่ 1 - 100 กันเถอะ")
-   
+    
     while True:
         try:
            
             user = int(input("ป้อนตัวเลขที่ต้องการทาย : "))
-           
-           
+            
+            
             if user == secretnumber:
                 print("*****************************************")
                 print("ยินดีด้วยคุณทายถูก")
@@ -26,7 +26,7 @@ def number():
         except ValueError:
             print("*****************************************")
             print("โปรดป้อนตัวเลขที่ถูกต้อง")
- 
-if __name__ == "main":
+
+if __name__ == "__main__":
     number()
     print("********************************************")
